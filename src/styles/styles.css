@@ -1,0 +1,297 @@
+/* General Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.text-blue {
+    color: rgb(2, 65, 146);
+}
+
+/* Header Styles */
+#header {
+    background-color: white;
+}
+
+/* News Carousel Styles */
+#news .carousel {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+}
+
+#news .carousel-inner {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#news .carousel-item {
+    flex: 0 0 100%;
+}
+
+#news .carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: none;
+}
+
+/* About Us Section Styles */
+#about_us {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.about_us_text {
+    flex: 1;
+    text-align: left;
+}
+
+.about_us_text h2,
+.investigators-title h2,
+.featured_projects_text h2 {
+    font-family: 'Times New Roman';
+    font-size: 4em;
+    font-weight: bold; /* Cambiado a font-weight */
+}
+
+.about_us_text p {
+    font-family: 'Times New Roman';
+    font-size: 1.25em;
+}
+
+.about_us_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about_us_image img {
+    width: 450px;
+}
+
+/* Figure Styles */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Investigators Section Styles */
+#investigators {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.investigators-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.investigators-title p {
+    font-family: 'Times New Roman';
+    margin-top: -30px;
+    font-size: 1.25em;
+}
+
+.investigators-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.investigator {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.investigator img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Featured Projects Section Styles */
+#featured_projects {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.featured_projects_text {
+    flex: 1;
+    text-align: left;
+}
+
+.featured_projects_text dt {
+    font-family: 'Times New Roman';
+    font-size: 1.5em;
+}
+
+.featured_projects_text dd {
+    font-family: 'Times New Roman';
+    font-size: 1em;
+}
+
+.featured_projects_text a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Featured Projects Images Carousel */
+#featured_projects_images {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#featured_projects_images .carousel-item {
+    transition: transform 0.7s ease-in-out;
+}
+
+#featured_projects_images .carousel-item img {
+    width: 300px;
+    height: auto;
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Social Media Section Styles */
+#social_media {
+    background-color: #9b9b9b;
+    text-align: center;
+}
+
+#social_media a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#social_media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#social_media a:hover {
+    transform: scale(1.1);
+}
+
+#social_media img:hover {
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+#footer {
+    margin: 0;
+    background-color: #2b2b2b;
+    padding: 20px;
+    
+}
+
+/* Footer Content Styles */
+#contenido {
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Sitemap Styles */
+#site_map {
+    flex: 1;
+    border-radius: 8px;
+    color: #8fc4b7;
+}
+
+#site_map h3 {
+    font-size: 1.2em;
+    color: #89c4a1;
+    margin-bottom: 10px;
+}
+
+#site_map a {
+    display: block;
+    font-size: 0.75em;
+    color: #c3c3c3;
+    margin: 5px 0;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+#site_map a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Contact Section Styles */
+#contacto {
+    flex: 1;
+}
+
+#contacto h3 {
+    font-size: 1.2em;
+    color: #89c4a1;
+    margin-bottom: 10px;
+}
+
+#contacto p {
+    font-size: 0.75em;
+    color: #c3c3c3;
+}
+
+/* Location Section Styles */
+#ubicacion {
+    flex: 1;
+}
+
+#ubicacion h3 {
+    font-size: 1.2em;
+    color: #89c4a1;
+    margin-bottom: 10px;
+}
+
+#ubicacion p {
+    font-size: 0.75em;
+    color: #c3c3c3;
+}
+
+#rights_reserved {
+    text-align: center; 
+    background-color: #1b1b1b;
+    padding: 10px 0;
+}
+
+#rights_reserved p {
+    font-size: 0.75em;
+    color: #c3c3c3;
+    margin: 0; 
+}

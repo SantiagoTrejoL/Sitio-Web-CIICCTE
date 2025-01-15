@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Definición del charset utilizado para la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Definición de la vista para dispositivos móviles, asegurando la escalabilidad adecuada -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripción del sitio web para motores de búsqueda -->
+    <meta name="description"
+        content="Centro de Investigación e Innovación en Ciencias de la Computación y Tecnología Educativa (CIICCTE) de la Facultad de Informática.">
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>CIICCTE</title>
+
+    <!-- Enlace a la fuente tipográfica Inter desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos de Bootstrap para diseñar el layout -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace al favicon que aparece en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="./images/escudosylogos/icono_fif_uaq.png">
+    <!-- Enlace a la hoja de estilos personalizada para esta página -->
+    <link rel="stylesheet" href="./css/styles_index.css">
+</head>
+
+<body>
+    <!-- Header del sitio, contiene la barra de navegación -->
+    <header>
+        <!-- Barra de navegación principal -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo de la página que redirige al índice -->
+                <a class="navbar-brand" href="index.html" aria-label="Inicio">
+                    <img src="./images/escudosylogos/logo_ciiccte.png" alt="Logo del CIICCTE" width="300">
+                </a>
+                <!-- Botón para activar la visualización del menú en dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item"> <!-- Inicia Elemento de lista de navegación -->
+                            <a class="nav-link text-blue" href="index.html" id="inicio">Inicio</a>
+                        </li> <!-- Termina Elemento de lista de navegación -->
+
+                        <li class="nav-item">
+                            <a class="nav-link text-blue" href="./html/about_us.html" id="about">¿Qué es CIICCTE?</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link text-blue" href="./html/investigadores.html" id="investigadores">Docentes
+                                Investigadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-blue" href="src/pages/resources.html" id="proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-blue" href="./html/noticias.html" id="noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-blue" href="https://www.uaq.mx/informatica/"
+                                target="_blank">Facultad de Informática</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal de la página -->
+    <main>
+        <!-- Sección del carrusel de imágenes -->
+        <section id="carousel">
+            <div id="news" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.uaq.mx/informatica/" target="_blank" aria-label="Facultad de Informática">
+                            <img src="./images/edificiosfif/coliseo2.jpg" class="d-block w-100"
+                                alt="Facultad de Informatica">
+                        </a>
+                    </div>
+                    <!-- Cada imagen redirige a un link dado, se puede usar para eventos, noticias, etc-->
+                    <div class="carousel-item"> <!-- Inicia Elemento de la diapositiva del carrusel (imagen) -->
+                        <a href="https://www.twitch.tv" target="_blank" aria-label="Twitch">
+                            <!-- Enlace que redirige a la página dada, se abre en una nueva pestaña -->
+                            <!-- Imagen dentro del carrusel con clases para asegurar que ocupa todo el ancho de la pantalla y sea responsiva -->
+                            <img src="./images/edificiosfif/coliseo3.jpg" class="d-block w-100" alt="Segunda imagen">
+                        </a>
+                    </div> <!-- Termina Elemento de la diapositiva del carrusel (imagen) -->
+                    <div class="carousel-item">
+                        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                            <img src="./images/edificiosfif/EdificioEscudos.jpg" class="d-block w-100"
+                                alt="Tercera imagen">
+                        </a>
+                    </div>
+                </div>
+                <!-- Controles de navegación para el carrusel -->
+                <a class="carousel-control-prev" href="#news" role="button" data-slide="prev" aria-label="Anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#news" role="button" data-slide="next" aria-label="Siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+        <!-- Sección sobre quiénes somos -->
+        <section id="about_us">
+            <div class="about_us_text">
+                <h2>¿Quiénes Somos?</h2>
+                <p>El Centro de Investigación e Innovación en Ciencias de la Computación y Tecnología Educativa
+                    (CIICCTE), de la Facultad de Informática, desde su inauguración en AAAA se ha dedicado al avance y
+                    la innovación en el campo de las ciencias de la computación y la tecnología educativa.</p>
+            </div>
+            <div class="about_us_image">
+                <figure>
+                    <img src="./images/edificiosfif/Edificio_Ciiccte.jpg" alt="Edificio Ciiccte">
+                    <figcaption>Edificio (Edificio de Innovación) del Centro de Investigación e Innovación en Ciencias
+                        de la Computación y Tecnología Educativa (CIICCTE).</figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- Sección del equipo de docentes investigadores -->
+        <section id="investigators">
+            <div class="investigators-title">
+                <h2>Nuestro Equipo</h2><br>
+                <p>Conoce a los Docentes Investigadores que participan en CIICCTE</p>
+            </div>
+            <div class="investigators-row">
+                <div class="investigator">
+                    <figure>
+                        <img src="./images/docentes/Persona1.jpg" alt="Dr. Jorge Luis Pérez Ramos">
+                        <figcaption>Dr. Jorge Luis Pérez Ramos <br> Doctorado en Mecatrónica</figcaption>
+                    </figure>
+                </div>
+                <div class="investigator">
+                    <figure>
+                        <img src="./images/docentes/Persona1.jpg" alt="Ph.D. Hugo Jiménez Hernández">
+                        <figcaption>Ph.D. Hugo Jiménez Hernández <br> Doctorado en Filosofía en Visión por Computadora
+                            <br> <a href="./html/investigadores.html" target="_blank">OTROS DOCENTES INVESTIGADORES >></a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="investigator">
+                    <figure>
+                        <img src="./images/docentes/Persona2.jpg" alt="MCC. Selene Ramírez Rosales">
+                        <figcaption>MCC. Selene Ramírez Rosales <br> Maestría en Ciencias de la Computación</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de proyectos destacados -->
+        <section id="featured_projects">
+            <div class="featured_projects_text">
+                <h2>Proyectos Destacados de CIICCTE</h2>
+                <dl>
+                    <dt>Titulo proyecto 1</dt>
+                    <dd>Descripcion Breve Proyecto 1</dd>
+                    <dt>Titulo proyecto 2</dt>
+                    <dd>Descripcion Breve Proyecto 2</dd>
+                    <dt>Titulo proyecto 3</dt>
+                    <dd>Descripcion Breve Proyecto 3</dd>
+                </dl>
+                <p><a href="/src/pages/resources.html">OTROS PROYECTOS REALIZADOS >></a></p>
+            </div>
+            <div id="featured_projects_images">
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+                    <div class="carousel-inner">
+                        <!-- Carrusel de imágenes de proyectos -->
+                        <div class="carousel-item active">
+                            <img src="./images/projects_topics/builds.png" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/cctv.png" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/cloud.png" class="d-block w-100" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/dataanalyst.png" class="d-block w-100" alt="Imagen 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/database.png" class="d-block w-100" alt="Imagen 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/vr.png" class="d-block w-100" alt="Imagen 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/web css.png" class="d-block w-100" alt="Imagen 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/web html.png" class="d-block w-100" alt="Imagen 8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/projects_topics/web.png" class="d-block w-100" alt="Imagen 9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de página con enlaces a redes sociales y contacto -->
+    <footer>
+        <!-- Enlaces a redes sociales -->
+        <div id="social_media">
+            <a href="https://www.facebook.com/fifuaq" target="_blank" aria-label="Facebook Facultad de Informatica">
+                <img src="./images/icons/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/InformaticaUAQ" target="_blank" aria-label="Twitter Facultad de Informatica">
+                <img src="./images/icons/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@fifuaq" target="_blank" aria-label="YouTube Facultad de Informatica">
+                <img src="./images/icons/YouTube.png" alt="YouTube">
+            </a>
+            <a href="https://instagram.com/InformaticaUAQ/" target="_blank"
+                aria-label="Instagram Facultad de Informatica">
+                <img src="./images/icons/Instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <!-- Sección de mapa de sitio y contacto -->
+        <section id="contenido">
+            <div id="site_map">
+                <h3>Mapa de Sitio</h3>
+                <a href="index.html">Inicio</a>
+                <a href="./html/about_us.html">¿Qué es CIICCTE?</a>
+                <a href="./html/investigadores.html">Docentes Investigadores</a>
+                <a href="src/pages/resources.html">Proyectos</a>
+                <a href="https://www.uaq.mx/informatica/">Facultad de Informatica</a>
+                <a href="http://148.220.52.100/portalInformatica">Portal</a>
+            </div>
+
+            <div id="contacto">
+                <h3>Contacto</h3>
+                <p>Av. de las Ciencias Sin Número<br>
+                    Campus Juriquilla<br>
+                    Juriquilla, Querétaro, Qro.<br>
+                    C.P. 76230 México<br>
+                    Tel. 1921200 EXT. 5900</p>
+            </div>
+
+            <div id="ubicacion">
+                <h3>Ubicación</h3>
+                <p>Último piso del edificio de INNOVACIÓN<br>
+                    a mano Izquierda.</p>
+            </div>
+        </section>
+
+        <!-- Derechos reservados -->
+        <div id="rights_reserved">
+            <p>CIICCTE | Facultad de Informática | UAQ <br>&copy; 2024</p>
+        </div>
+    </footer>
+    <!-- Inclusión de librerías necesarias para funcionalidad de la página -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Enlaces a los scripts personalizados -->
+    <script src="./js/navbar_activo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.text-blue {
+  color: #1D5B8A; /* Color azul más suave */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #2B6D97 !important; /* Azul ligeramente más oscuro */
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+  color: #2563eb !important;
+} 
+
+/* Header Styles */
+#header {
+  background-color: #ffffff; /* Blanco limpio */
+}
+
+/* Barra de navegacion secundaria */
+
+.secondary-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 0;
+}
+
+.secondary-navbar-menu {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-navbar-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.secondary-navbar-item a:hover {
+  color: #007bff;
+}
+
+.secondary-navbar-item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #007bff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.secondary-navbar-item a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Contenido de texto */
+
+/* Contenedor principal */
+.main-content {
+  max-width: 1000px; /* Aqui se modifica el tamaño donde se mostrara el contenido */
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Estilos para el título */
+.main-content h1 {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para párrafos */
+.main-content p {
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Estilos para imágenes */
+.float-image {
+  max-width: 100%; /* En este atributo se modifica el tamaño de la imagen*/
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Efectos de hover sutiles */
+.main-content a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-content a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .main-content {
+      padding: 20px 10px;
+  }
+
+  .main-content h1 {
+      font-size: 2rem;
+  }
+}
+
+/* Estilos para la parte de los algoritmos */
+
+#result { 
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.scroll-box {
+  height: 400px; /* maximum height of the box, feel free to change this! */
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 10px;
+  width: 350px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* hide horizontal scrollbar */
+  overflow-y: scroll; /* enable vertical scrollbar */
+  display: none; /* disable display */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: flex-start;
+  margin: 20px;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.work-area {
+  flex: 0 1 auto; /* Cambia flex: 1 por flex: 0 1 auto */
+  max-width: 1000px;
+  margin: 0 auto; /* Centra el work-area dentro del container */
+  width: 100%; /* Asegura que ocupe el ancho disponible hasta su max-width */
+}
+
+.infoArea {
+  display: none; /* Inicialmente oculto */
+  flex: 0 1 auto; /* Cambia flex: 1 por flex: 0 1 auto */
+}
+
+/* Clases para cuando se seleccione un algoritmo */
+.layout-with-info {
+  justify-content: space-between;
+  padding: 0 20px; /* Añade padding horizontal al container */
+}
+
+.work-area-with-info {
+  flex: 0 1 50%; /* Cambia a ocupar la mitad del espacio */
+  margin-right: 20px;
+}
+
+.infoArea-visible {
+  display: block;
+  flex: 0 1 45%; /* Ligeramente menos que work-area para mantener el espacio */
+  height:400px;
+  width:120px;
+  border:1px solid #ccc;
+  /* font:16px/26px Georgia, Garamond, Serif; */
+  overflow:auto;
+}
+
+/* Asegúrate de que los elementos internos del work-area estén centrados */
+.algorithm-select,
+.mb-3,
+.center-button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#algorithmSelect {
+  appearance: none; /* Elimina el estilo nativo del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 330px;
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M1 4l5 5 5-5' fill='none' stroke='%23888' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+#algorithmSelect:hover {
+  border-color: #a0a0a0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#algorithmSelect:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74,144,226,0.2);
+}
+
+/* Estilos para las opciones */
+#algorithmSelect option {
+  background-color: white;
+  color: #333;
+  padding: 10px;
+}
+
+/* Mejora de compatibilidad para navegadores Firefox */
+#algorithmSelect:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+#workArea h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#1e40af
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.clear-btn {
+  display: none;
+  text-align: center;
+}
+
+.algorithm-info {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.info-section {
+  margin: 20px 0;
+}
+
+.info-section h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.info-section ul, 
+.info-section ol {
+  padding-left: 20px;
+}
+
+.info-section li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.algorithm-info h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visualization h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/* Social Media Section Styles */
+#social_media {
+  background-color: #6C757D; /* Gris oscuro */
+  text-align: center;
+  padding: 20px 0;
+}
+
+#social_media a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+#social_media img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#social_media a:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #343a40; /* Gris oscuro para el pie de página */
+  padding: 20px;
+}
+
+#contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #495057; /* Gris más oscuro */
+  padding: 40px;
+  gap: 20px;
+}
+
+#site_map, #contacto, #ubicacion {
+  flex: 1;
+}
+
+#site_map h3,
+#contacto h3,
+#ubicacion h3 {
+  font-size: 1.2em;
+  color: #dbe1e4; /* Gris claro */
+  margin-bottom: 10px;
+}
+
+#site_map p,
+#contacto p,
+#ubicacion p {
+  font-size: 0.75em;
+  color: #dbe1e4; /* Gris claro */
+  margin-bottom: 5px 0;
+}
+
+#site_map a {
+  display: block;
+  font-size: 0.75em;
+  color: #c3c3c3;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+#site_map a:hover {
+  color: #ffffff;
+}
+
+#rights_reserved {
+  text-align: center;
+  background-color: #212529; /* Gris muy oscuro */
+  padding: 10px;
+}
+
+#rights_reserved p {
+  font-size: 0.75em;
+  color: #c3c3c3;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+
+  #site_map, #contacto, #ubicacion {
+      margin-bottom: 20px;
+  }
+}
+

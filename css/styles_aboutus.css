@@ -1,0 +1,299 @@
+/* General Styles */
+/* Aplica box-sizing para incluir padding y border dentro del tamaño total de los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina padding predeterminado de todos los elementos */
+}
+
+/* Estilo base para el cuerpo del documento */
+/* Define una fuente general, altura de línea para la legibilidad y un color de fondo neutro */
+body {
+  font-family: Arial, sans-serif; /* Establece una fuente sencilla y universal */
+  line-height: 1.6; /* Mejora la legibilidad al aumentar la separación entre líneas */
+  background-color: #dadbdb; /* Asigna un fondo gris claro para todo el sitio */
+}
+
+/* Estilo global para imágenes */
+/* Asegura que las imágenes sean responsivas y mantengan su proporción */
+img {
+  max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+  height: auto; /* Mantiene las proporciones originales de las imágenes */
+  object-fit: cover; /* Garantiza que la imagen cubra completamente su contenedor */
+}
+/* Navbar Styles */
+/* Estilo para la marca de la barra de navegación (nombre/logo del sitio) */
+.navbar-brand {
+  display: flex; /* Utiliza flexbox para alinear los elementos internos de forma horizontal */
+  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo para la imagen de la marca dentro de la barra de navegación */
+.navbar-brand img {
+  margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+}
+
+/* Estilo para texto con la clase 'text-blue' */
+/* Generalmente usado en el título o elementos destacados de la navbar */
+.text-blue {
+  color: #1d5b8a; /* Aplica un color azul suave al texto */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente elegante y bien legible */
+  font-size: larger; /* Incrementa ligeramente el tamaño del texto */
+}
+
+/* Estilo para enlaces activos dentro de la barra de navegación */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Destaca el enlace activo con texto en negrita */
+  color: #2b6d97 !important; /* Aplica un azul más oscuro para resaltar el enlace activo */
+  text-decoration: underline; /* Subraya el enlace activo para mayor énfasis */
+}
+
+/* Efecto hover en los enlaces de la barra de navegación */
+.nav-link:hover {
+  background-color: #f3f4f6; /* Cambia el fondo a un gris claro al pasar el cursor */
+  color: #2563eb !important; /* Aplica un azul más brillante para destacar el enlace */
+}
+/* Header Styles */
+/* Estilo para el encabezado principal del sitio */
+#header {
+  background-color: #ffffff; /* Fondo blanco limpio que aporta claridad al encabezado */
+}
+
+/* About Us Section Styles */
+/* Estilos para las imágenes dentro de la sección "About Us" */
+#about_us img {
+  width: 100%; /* La imagen ocupará todo el ancho disponible de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  max-height: 400px; /* Establece una altura máxima para evitar que la imagen sea demasiado alta */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse, recortando si es necesario */
+  border: none; /* Elimina cualquier borde de la imagen */
+}
+
+.nuesta_historia,
+.mision,
+.vision,
+.objetivos,
+.Líneas_de_Investigación h2 {
+  text-indent: 30px; /* Aplica un margen en el inicio de la línea para el texto */
+  text-align: justify; /* Justifica el texto para que se distribuya de manera uniforme */
+  font-family: "Courier New", Courier, monospace; /* Usa una tipografía monoespaciada */
+  font-size: clamp(
+    2.5rem,
+    4vw,
+    4em
+  ); /* Ajusta el tamaño de la fuente dinámicamente, entre 2.5rem y 4em */
+  font-weight: bold; /* Aplica negrita al texto */
+}
+
+.nuesta_historia,
+.mision,
+.vision,
+.objetivos,
+.Líneas_de_Investigación p {
+  text-indent: 30px; /* Aplica un margen en el inicio de las líneas de los párrafos */
+  text-align: justify; /* Justifica los párrafos para que se extiendan de un borde al otro */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Define una tipografía sans-serif más legible */
+  font-size: 1.25em; /* Establece un tamaño de fuente mayor para los párrafos */
+  color: rgb(77, 75, 75); /* Aplica un color gris medio al texto */
+}
+
+.nuesta_historia,
+.mision,
+.vision,
+.objetivos,
+.Líneas_de_Investigación {
+  padding: 25px; /* Agrega espacio alrededor de cada sección para separarlas de otros elementos */
+}
+
+/* Carousel Container Styles */
+.carousel-container {
+  display: flex; /* Utiliza Flexbox para alinear los elementos en el contenedor */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos de manera uniforme */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  width: 100%; /* Establece que el contenedor ocupe todo el ancho disponible */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor a 1200px */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  gap: 20px; /* Agrega un espacio de 20px entre los elementos */
+  padding: 20px; /* Añade 20px de espacio interno alrededor del contenedor */
+}
+
+.carousel-image {
+  width: 30%; /* Establece el ancho de cada imagen del carrusel al 30% del contenedor */
+  transition: opacity 1s ease; /* Añade una transición suave en la opacidad de las imágenes */
+}
+
+/* Social Media Section Styles */
+/* Estilos para la sección de redes sociales */
+#social_media {
+  background-color: #6c757d; /* Gris oscuro para crear contraste con el resto del sitio */
+  text-align: center; /* Centra el contenido de la sección */
+  padding: 20px 0; /* Espacio vertical en la parte superior e inferior de la sección */
+}
+
+/* Estilos para los enlaces dentro de la sección de redes sociales */
+#social_media a {
+  display: inline-block; /* Los enlaces se muestran en línea pero pueden tener dimensiones de bloque */
+  margin: 0 10px; /* Margen horizontal de 10px entre cada enlace */
+  transition: transform 0.3s ease; /* Agrega una transición suave al transformar los enlaces */
+}
+
+/* Estilos para las imágenes dentro de la sección de redes sociales */
+#social_media img {
+  width: 40px; /* Tamaño de las imágenes de los íconos de redes sociales */
+  height: 40px; /* Mantiene las imágenes cuadradas */
+  border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados, creando círculos */
+}
+
+/* Efecto de hover en los enlaces de redes sociales */
+#social_media a:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de los íconos al pasar el mouse por encima */
+}
+
+/* Footer Styles */
+/* Estilos para el pie de página */
+#footer {
+  background-color: #343a40; /* Gris oscuro para el fondo del pie de página */
+  padding: 20px; /* Espacio interno de 20px en todo el pie de página */
+}
+
+/* Estilos para el contenedor principal dentro del pie de página */
+#contenido {
+  display: flex; /* Utiliza el modelo de diseño flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+  justify-content: space-between; /* Distribuye el espacio de manera uniforme entre los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+  background-color: #495057; /* Gris más oscuro para diferenciar del pie de página */
+  padding: 40px; /* Espaciado de 40px alrededor del contenido */
+  gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+/* Estilos para las secciones dentro del pie de página (mapa del sitio, contacto, ubicación) */
+#site_map,
+#contacto,
+#ubicacion {
+  flex: 1; /* Cada sección toma un espacio igual dentro del contenedor */
+}
+
+/* Estilos para los títulos de las secciones dentro del pie de página */
+#site_map h3,
+#contacto h3,
+#ubicacion h3 {
+  font-size: 1.2em; /* Tamaño de fuente para los encabezados */
+  color: #dbe1e4; /* Gris claro para los títulos */
+  margin-bottom: 10px; /* Espacio debajo de los títulos */
+}
+
+/* Estilos para los párrafos dentro de las secciones del pie de página */
+#site_map p,
+#contacto p,
+#ubicacion p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los párrafos */
+  color: #dbe1e4; /* Gris claro */
+  margin-bottom: 5px 0; /* Espacio entre párrafos */
+}
+
+/* Estilos para los enlaces dentro del mapa del sitio */
+#site_map a {
+  display: block; /* Hace que cada enlace se muestre como un bloque para ocupar toda la línea */
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los enlaces */
+  color: #c3c3c3; /* Gris suave */
+  margin: 5px 0; /* Espacio entre los enlaces */
+  transition: color 0.3s ease; /* Transición suave de color cuando se pasa el mouse */
+}
+
+/* Efecto de hover en los enlaces del mapa del sitio */
+#site_map a:hover {
+  color: #ffffff; /* Cambia el color a blanco cuando se pasa el mouse */
+}
+
+/* Estilos para el contenedor de derechos reservados */
+#rights_reserved {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: #212529; /* Gris muy oscuro para el fondo de esta sección */
+  padding: 10px; /* Espaciado interno de 10px */
+}
+
+/* Estilos para el texto dentro de los derechos reservados */
+#rights_reserved p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente */
+  color: #c3c3c3; /* Gris suave */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .carousel-container {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna, para apilar las imágenes */
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+
+  .carousel-image {
+    width: 80%; /* Establece el ancho de las imágenes a un 80% en pantallas más pequeñas */
+    margin-bottom: 20px; /* Agrega un margen inferior para separarlas */
+  }
+}
+
+@media (max-width: 768px) {
+  #contenido {
+    flex-direction: column; /* Cambia la dirección del contenido a columna para pantallas más pequeñas */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Agrega un relleno adicional alrededor del contenido */
+  }
+
+  #about_us img {
+    max-height: 300px; /* Limita la altura de las imágenes en la sección 'about_us' a 300px */
+  }
+
+  #site_map,
+  #contacto,
+  #ubicacion {
+    margin-bottom: 20px; /* Añade un margen inferior para separar las secciones en pantallas más pequeñas */
+  }
+
+  .nuesta_historia,
+  .mision,
+  .vision,
+  .objetivos,
+  .Líneas_de_Investigación {
+    padding: 15px; /* Reduce el relleno de estas secciones en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container {
+    padding: 10px; /* Reduce el relleno dentro del contenedor del carrusel en pantallas pequeñas */
+  }
+
+  .nuesta_historia,
+  .mision,
+  .vision,
+  .objetivos,
+  .Líneas_de_Investigación p,
+  h2 {
+    text-indent: 10px; /* Reduce la sangría del texto para adaptarse mejor a pantallas pequeñas */
+  }
+
+  #site_map a {
+    font-size: 0.9em; /* Ajusta el tamaño de fuente en los enlaces para pantallas pequeñas */
+  }
+
+  #footer,
+  #rights_reserved {
+    padding: 15px; /* Reduce el relleno del pie de página y derechos reservados */
+  }
+
+  #contacto p,
+  #ubicacion p {
+    font-size: 0.9em; /* Reduce el tamaño de fuente para mejorar la legibilidad en pantallas pequeñas */
+  }
+}
+
+/* Navbar active link styles */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Resalta el texto de la opción activa */
+  color: #025192 !important; /* Cambia el color de la opción activa */
+  text-decoration: underline; /* Subraya la opción activa, lo hace más visible */
+}

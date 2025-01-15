@@ -1,0 +1,399 @@
+/* General Styles */
+/* Aplica box-sizing para incluir padding y border dentro del tamaño total de los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina padding predeterminado de todos los elementos */
+}
+
+/* Estilo base para el cuerpo del documento */
+/* Define una fuente general, altura de línea para la legibilidad y un color de fondo neutro */
+body {
+  font-family: Arial, sans-serif; /* Establece una fuente sencilla y universal */
+  line-height: 1.6; /* Mejora la legibilidad al aumentar la separación entre líneas */
+  background-color: #dadbdb; /* Asigna un fondo gris claro para todo el sitio */
+}
+
+/* Estilo global para imágenes */
+/* Asegura que las imágenes sean responsivas y mantengan su proporción */
+img {
+  max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+  height: auto; /* Mantiene las proporciones originales de las imágenes */
+  object-fit: cover; /* Garantiza que la imagen cubra completamente su contenedor */
+}
+
+/* Navbar Styles */
+/* Estilo para la marca de la barra de navegación (nombre/logo del sitio) */
+.navbar-brand {
+  display: flex; /* Utiliza flexbox para alinear los elementos internos de forma horizontal */
+  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo para la imagen de la marca dentro de la barra de navegación */
+.navbar-brand img {
+  margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+}
+
+/* Estilo para texto con la clase 'text-blue' */
+/* Generalmente usado en el título o elementos destacados de la navbar */
+.text-blue {
+  color: #1d5b8a; /* Aplica un color azul suave al texto */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente elegante y bien legible */
+  font-size: larger; /* Incrementa ligeramente el tamaño del texto */
+}
+
+/* Estilo para enlaces activos dentro de la barra de navegación */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Destaca el enlace activo con texto en negrita */
+  color: #2b6d97 !important; /* Aplica un azul más oscuro para resaltar el enlace activo */
+  text-decoration: underline; /* Subraya el enlace activo para mayor énfasis */
+}
+
+/* Efecto hover en los enlaces de la barra de navegación */
+.nav-link:hover {
+  background-color: #f3f4f6; /* Cambia el fondo a un gris claro al pasar el cursor */
+  color: #2563eb !important; /* Aplica un azul más brillante para destacar el enlace */
+}
+
+/* Header Styles */
+/* Estilo para el encabezado principal del sitio */
+#header {
+  background-color: #ffffff; /* Fondo blanco limpio que aporta claridad al encabezado */
+}
+
+/* News Carousel Styles */
+/* Contenedor general del carrusel de noticias */
+#news .carousel {
+  width: 100%; /* El carrusel ocupa todo el ancho del contenedor */
+  height: 400px; /* Altura fija para mantener consistencia visual */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites del carrusel */
+}
+
+/* Contenedor interno del carrusel para las diapositivas */
+#news .carousel-inner {
+  display: flex; /* Utiliza flexbox para alinear las diapositivas horizontalmente */
+}
+
+/* Estilo para cada elemento individual del carrusel */
+#news .carousel-item {
+  flex: 0 0 100%; /* Cada diapositiva ocupa el 100% del ancho del carrusel */
+}
+
+/* Estilo para las imágenes dentro de las diapositivas del carrusel */
+#news .carousel-inner img {
+  width: 100%; /* Las imágenes ocupan el ancho completo de cada diapositiva */
+  height: 350px; /* Altura fija para mantener la proporción del diseño */
+}
+
+/* About Us Section Styles */
+/* Contenedor principal de la sección "Sobre Nosotros" */
+#about_us {
+  background-color: #dadbdb; /* Fondo gris muy claro para un diseño limpio y neutral */
+  display: flex; /* Se utiliza flexbox para alinear los elementos dentro del contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  align-items: center; /* Centra verticalmente los elementos en el eje cruzado */
+  justify-content: space-between; /* Espacia los elementos equitativamente en el eje principal */
+  padding: 50px; /* Espaciado interno para separar el contenido de los bordes */
+  gap: 20px; /* Espaciado entre elementos hijos */
+}
+
+/* Contenedor para el texto dentro de la sección "Sobre Nosotros" */
+.about_us_text {
+  flex: 1; /* Ocupa una porción igual del espacio disponible */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para los encabezados en la sección y en los títulos de investigadores */
+.about_us_text h2,
+.investigators-title h2 {
+  font-family: "Courier New", Courier, monospace; /* Fuente de estilo monoespaciado */
+  font-size: clamp(
+    2.5rem,
+    4vw,
+    4em
+  ); /* Ajusta el tamaño del texto en función del ancho de la ventana */
+  font-weight: bold; /* Hace que los encabezados sean visualmente destacados */
+  color: #333; /* Gris oscuro para un buen contraste con el fondo */
+}
+
+/* Estilos para los párrafos en la sección y en los títulos de investigadores */
+.about_us_text p,
+.investigators-title p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente de fácil lectura */
+  font-size: 1.25em; /* Tamaño de fuente ligeramente más grande para mejorar la legibilidad */
+  color: #666; /* Gris medio para un contraste suave con el fondo */
+}
+
+/* Contenedor para la imagen en la sección "Sobre Nosotros" */
+.about_us_image {
+  flex: 1; /* Ocupa una porción igual del espacio disponible */
+  display: flex; /* Utiliza flexbox para alinear la imagen */
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+/* Estilo para la imagen en la sección "Sobre Nosotros" */
+.about_us_image img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor disponible */
+  max-width: 450px; /* Limita el ancho máximo de la imagen para mantener proporciones agradables */
+}
+
+/* Figure Styles */
+/* Estilos generales para la etiqueta <figure> */
+figure {
+  text-align: center; /* Centra el contenido dentro de la etiqueta figure (por ejemplo, imágenes y pie de foto) */
+  margin: 0; /* Elimina el margen por defecto para tener un control total sobre los espaciados */
+}
+
+/* Estilos para el pie de foto (<figcaption>) */
+figcaption {
+  font-style: italic; /* Hace que el texto del pie de foto se muestre en cursiva */
+  font-size: 1em; /* Tamaño de fuente estándar */
+  color: #888; /* Gris suave para un contraste sutil, asegurando que el pie de foto no distraiga demasiado */
+  margin-top: 5px; /* Agrega un pequeño espacio por encima del pie de foto para separarlo de la imagen */
+  color: black; /* Color del texto negro */
+}
+
+/* Investigators Section Styles */
+/* Estilos generales para la sección de investigadores */
+#investigators {
+  background-color: #dadbdb; /* Gris muy claro, similar al color del fondo general, para mantener coherencia visual */
+  display: flex; /* Utiliza flexbox para organizar los elementos */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 50px; /* Agrega un padding amplio para dar espacio alrededor de la sección */
+}
+
+/* Contenedor para las filas de los investigadores */
+.investigators-row {
+  display: flex; /* Usa flexbox para organizar las tarjetas de los investigadores */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas filas si no caben */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+  gap: 50px; /* Agrega un espacio de 50px entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta de investigador */
+.investigator {
+  padding: 10px; /* Agrega un pequeño padding para separar las tarjetas de sus bordes */
+  display: flex; /* Usa flexbox para organizar el contenido dentro de la tarjeta */
+  justify-content: center; /* Centra la imagen de cada investigador dentro de la tarjeta */
+}
+
+/* Estilos para la imagen del investigador */
+.investigator img {
+  max-width: 300px; /* Limita el tamaño máximo de la imagen a 300px de ancho */
+}
+
+/* Featured Projects Section Styles */
+/* Estilos para la sección de proyectos destacados */
+#featured_projects {
+  background-color: #dadbdb; /* Gris claro, consistente con el diseño general del sitio */
+  display: flex; /* Usa flexbox para organizar los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas filas si no caben */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos, con separación entre ellos */
+  padding: 50px; /* Agrega un padding amplio para dar espacio alrededor de la sección */
+  gap: 20px; /* Espacio entre los elementos dentro de la sección */
+}
+
+/* Estilos para el texto dentro de los proyectos destacados */
+.featured_projects_text {
+  flex: 1; /* Permite que el contenedor del texto ocupe el espacio disponible */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para las etiquetas de definición (dt) dentro del texto de los proyectos */
+.featured_projects_text dt {
+  font-family: "Courier New", Courier, monospace; /* Fuente monoespaciada para las etiquetas */
+  font-size: 1.5em; /* Tamaño de fuente grande para las etiquetas */
+  color: #424141; /* Gris oscuro, destacando las etiquetas */
+}
+
+/* Estilos para los valores de definición (dd) dentro del texto de los proyectos */
+.featured_projects_text dd {
+  font-family: "Courier New", Courier, monospace; /* Fuente monoespaciada */
+  font-size: 1em; /* Tamaño de fuente estándar */
+  color: #555; /* Gris oscuro para el texto */
+}
+
+/* Estilos para el encabezado de los proyectos destacados */
+.featured_projects_text h2 {
+  font-family: "Courier New", Courier, monospace; /* Fuente monoespaciada */
+  font-size: 2.5em; /* Tamaño de fuente grande */
+  color: #555; /* Gris oscuro */
+}
+
+/* Estilos para los enlaces dentro de los proyectos destacados */
+.featured_projects_text a {
+  font-style: italic; /* Hace que el texto del enlace sea cursivo */
+  text-decoration: underline; /* Subraya los enlaces */
+  color: #1d5b8a; /* Azul suave, consistente con otros enlaces en el sitio */
+}
+
+/* Estilos para la imagen de los proyectos destacados */
+#featured_projects_images {
+  width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+  max-width: 400px; /* Limita el tamaño máximo de la imagen a 400px de ancho */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos para las imágenes dentro del carrusel de proyectos destacados */
+#featured_projects_images .carousel-item img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  object-fit: fill; /* Ajusta la imagen para llenar el contenedor sin distorsionar su aspecto */
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+/* Social Media Section Styles */
+/* Estilos para la sección de redes sociales */
+#social_media {
+  background-color: #6c757d; /* Gris oscuro para crear contraste con el resto del sitio */
+  text-align: center; /* Centra el contenido de la sección */
+  padding: 20px 0; /* Espacio vertical en la parte superior e inferior de la sección */
+}
+
+/* Estilos para los enlaces dentro de la sección de redes sociales */
+#social_media a {
+  display: inline-block; /* Los enlaces se muestran en línea pero pueden tener dimensiones de bloque */
+  margin: 0 10px; /* Margen horizontal de 10px entre cada enlace */
+  transition: transform 0.3s ease; /* Agrega una transición suave al transformar los enlaces */
+}
+
+/* Estilos para las imágenes dentro de la sección de redes sociales */
+#social_media img {
+  width: 40px; /* Tamaño de las imágenes de los íconos de redes sociales */
+  height: 40px; /* Mantiene las imágenes cuadradas */
+  border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados, creando círculos */
+}
+
+/* Efecto de hover en los enlaces de redes sociales */
+#social_media a:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de los íconos al pasar el mouse por encima */
+}
+
+/* Footer Styles */
+/* Estilos para el pie de página */
+#footer {
+  background-color: #343a40; /* Gris oscuro para el fondo del pie de página */
+  padding: 20px; /* Espacio interno de 20px en todo el pie de página */
+}
+
+/* Estilos para el contenedor principal dentro del pie de página */
+#contenido {
+  display: flex; /* Utiliza el modelo de diseño flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+  justify-content: space-between; /* Distribuye el espacio de manera uniforme entre los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+  background-color: #495057; /* Gris más oscuro para diferenciar del pie de página */
+  padding: 40px; /* Espaciado de 40px alrededor del contenido */
+  gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+/* Estilos para las secciones dentro del pie de página (mapa del sitio, contacto, ubicación) */
+#site_map,
+#contacto,
+#ubicacion {
+  flex: 1; /* Cada sección toma un espacio igual dentro del contenedor */
+}
+
+/* Estilos para los títulos de las secciones dentro del pie de página */
+#site_map h3,
+#contacto h3,
+#ubicacion h3 {
+  font-size: 1.2em; /* Tamaño de fuente para los encabezados */
+  color: #dbe1e4; /* Gris claro para los títulos */
+  margin-bottom: 10px; /* Espacio debajo de los títulos */
+}
+
+/* Estilos para los párrafos dentro de las secciones del pie de página */
+#site_map p,
+#contacto p,
+#ubicacion p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los párrafos */
+  color: #dbe1e4; /* Gris claro */
+  margin-bottom: 5px 0; /* Espacio entre párrafos */
+}
+
+/* Estilos para los enlaces dentro del mapa del sitio */
+#site_map a {
+  display: block; /* Hace que cada enlace se muestre como un bloque para ocupar toda la línea */
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los enlaces */
+  color: #c3c3c3; /* Gris suave */
+  margin: 5px 0; /* Espacio entre los enlaces */
+  transition: color 0.3s ease; /* Transición suave de color cuando se pasa el mouse */
+}
+
+/* Efecto de hover en los enlaces del mapa del sitio */
+#site_map a:hover {
+  color: #ffffff; /* Cambia el color a blanco cuando se pasa el mouse */
+}
+
+/* Estilos para el contenedor de derechos reservados */
+#rights_reserved {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: #212529; /* Gris muy oscuro para el fondo de esta sección */
+  padding: 10px; /* Espaciado interno de 10px */
+}
+
+/* Estilos para el texto dentro de los derechos reservados */
+#rights_reserved p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente */
+  color: #c3c3c3; /* Gris suave */
+}
+
+/* Responsive Media Queries */
+/* Consultas de medios para adaptarse a pantallas pequeñas (tabletas, móviles) */
+
+/* Para pantallas con un ancho máximo de 768px (tabletas y dispositivos más pequeños) */
+@media (max-width: 768px) {
+  /* Cambia la dirección del contenido en las secciones a columna y centra los elementos */
+  #about_us,
+  #featured_projects,
+  #contenido {
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Reduce el espaciado interno para ajustarse mejor */
+  }
+
+  /* Asegura que las imágenes de la sección 'About Us' y los investigadores tengan un ancho del 100% */
+  .about_us_image img,
+  .investigator img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+  }
+
+  /* Reduce el espacio entre los elementos dentro de la fila de investigadores */
+  .investigators-row {
+    gap: 15px; /* Espacio reducido entre los elementos */
+  }
+
+  /* Añade un margen inferior a las secciones del pie de página para mejorar la distribución */
+  #site_map,
+  #contacto,
+  #ubicacion {
+    margin-bottom: 20px; /* Espacio entre las secciones */
+  }
+}
+
+/* Para pantallas con un ancho máximo de 576px (móviles más pequeños) */
+@media (max-width: 576px) {
+  /* Reduce la altura del carrusel en la sección de noticias */
+  #news .carousel {
+    height: 200px; /* Hace que el carrusel sea más compacto */
+  }
+
+  /* Reduce el tamaño de los encabezados en la sección 'About Us' y 'Investigadores' */
+  .about_us_text h2,
+  .investigators-title h2 {
+    font-size: 2.5em; /* Disminuye el tamaño de los encabezados */
+  }
+
+  /* Asegura que las imágenes de los proyectos destacados tengan un ancho máximo del 100% */
+  #featured_projects_images {
+    max-width: 100%; /* Las imágenes ocuparán el ancho completo */
+  }
+}

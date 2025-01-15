@@ -1,0 +1,238 @@
+/* General Styles */
+/* Aplica box-sizing para incluir padding y border dentro del tamaño total de los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina padding predeterminado de todos los elementos */
+  }
+  
+  /* Estilo base para el cuerpo del documento */
+  /* Define una fuente general, altura de línea para la legibilidad y un color de fondo neutro */
+  body {
+    font-family: Arial, sans-serif; /* Establece una fuente sencilla y universal */
+    line-height: 1.6; /* Mejora la legibilidad al aumentar la separación entre líneas */
+    background-color: #dadbdb; /* Asigna un fondo gris claro para todo el sitio */
+  }
+  
+  /* Estilo global para imágenes */
+  /* Asegura que las imágenes sean responsivas y mantengan su proporción */
+  img {
+    max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+    height: auto; /* Mantiene las proporciones originales de las imágenes */
+    object-fit: cover; /* Garantiza que la imagen cubra completamente su contenedor */
+  }
+  /* Navbar Styles */
+  /* Estilo para la marca de la barra de navegación (nombre/logo del sitio) */
+  .navbar-brand {
+    display: flex; /* Utiliza flexbox para alinear los elementos internos de forma horizontal */
+    align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+  }
+  
+  /* Estilo para la imagen de la marca dentro de la barra de navegación */
+  .navbar-brand img {
+    margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+  }
+  
+  /* Estilo para texto con la clase 'text-blue' */
+  /* Generalmente usado en el título o elementos destacados de la navbar */
+  .text-blue {
+    color: #1d5b8a; /* Aplica un color azul suave al texto */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente elegante y bien legible */
+    font-size: larger; /* Incrementa ligeramente el tamaño del texto */
+  }
+  
+  /* Estilo para enlaces activos dentro de la barra de navegación */
+  .navbar-nav .nav-link.active {
+    font-weight: bold; /* Destaca el enlace activo con texto en negrita */
+    color: #2b6d97 !important; /* Aplica un azul más oscuro para resaltar el enlace activo */
+    text-decoration: underline; /* Subraya el enlace activo para mayor énfasis */
+  }
+  
+  /* Efecto hover en los enlaces de la barra de navegación */
+  .nav-link:hover {
+    background-color: #f3f4f6; /* Cambia el fondo a un gris claro al pasar el cursor */
+    color: #2563eb !important; /* Aplica un azul más brillante para destacar el enlace */
+  }
+  /* Header Styles */
+  /* Estilo para el encabezado principal del sitio */
+  #header {
+    background-color: #ffffff; /* Fondo blanco limpio que aporta claridad al encabezado */
+  }
+
+/* Social Media Section Styles */
+/* Estilos para la sección de redes sociales */
+#social_media {
+    background-color: #6c757d; /* Gris oscuro para crear contraste con el resto del sitio */
+    text-align: center; /* Centra el contenido de la sección */
+    padding: 20px 0; /* Espacio vertical en la parte superior e inferior de la sección */
+  }
+  
+  /* Estilos para los enlaces dentro de la sección de redes sociales */
+  #social_media a {
+    display: inline-block; /* Los enlaces se muestran en línea pero pueden tener dimensiones de bloque */
+    margin: 0 10px; /* Margen horizontal de 10px entre cada enlace */
+    transition: transform 0.3s ease; /* Agrega una transición suave al transformar los enlaces */
+  }
+  
+  /* Estilos para las imágenes dentro de la sección de redes sociales */
+  #social_media img {
+    width: 40px; /* Tamaño de las imágenes de los íconos de redes sociales */
+    height: 40px; /* Mantiene las imágenes cuadradas */
+    border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados, creando círculos */
+  }
+  
+  /* Efecto de hover en los enlaces de redes sociales */
+  #social_media a:hover {
+    transform: scale(
+      1.1
+    ); /* Aumenta el tamaño de los íconos al pasar el mouse por encima */
+  }
+  
+  /* Footer Styles */
+  /* Estilos para el pie de página */
+  #footer {
+    background-color: #343a40; /* Gris oscuro para el fondo del pie de página */
+    padding: 20px; /* Espacio interno de 20px en todo el pie de página */
+  }
+  
+  /* Estilos para el contenedor principal dentro del pie de página */
+  #contenido {
+    display: flex; /* Utiliza el modelo de diseño flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio de manera uniforme entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+    background-color: #495057; /* Gris más oscuro para diferenciar del pie de página */
+    padding: 40px; /* Espaciado de 40px alrededor del contenido */
+    gap: 20px; /* Espacio de 20px entre los elementos */
+  }
+  
+  /* Estilos para las secciones dentro del pie de página (mapa del sitio, contacto, ubicación) */
+  #site_map,
+  #contacto,
+  #ubicacion {
+    flex: 1; /* Cada sección toma un espacio igual dentro del contenedor */
+  }
+  
+  /* Estilos para los títulos de las secciones dentro del pie de página */
+  #site_map h3,
+  #contacto h3,
+  #ubicacion h3 {
+    font-size: 1.2em; /* Tamaño de fuente para los encabezados */
+    color: #dbe1e4; /* Gris claro para los títulos */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+  }
+  
+  /* Estilos para los párrafos dentro de las secciones del pie de página */
+  #site_map p,
+  #contacto p,
+  #ubicacion p {
+    font-size: 0.75em; /* Tamaño pequeño de fuente para los párrafos */
+    color: #dbe1e4; /* Gris claro */
+    margin-bottom: 5px 0; /* Espacio entre párrafos */
+  }
+  
+  /* Estilos para los enlaces dentro del mapa del sitio */
+  #site_map a {
+    display: block; /* Hace que cada enlace se muestre como un bloque para ocupar toda la línea */
+    font-size: 0.75em; /* Tamaño pequeño de fuente para los enlaces */
+    color: #c3c3c3; /* Gris suave */
+    margin: 5px 0; /* Espacio entre los enlaces */
+    transition: color 0.3s ease; /* Transición suave de color cuando se pasa el mouse */
+  }
+  
+  /* Efecto de hover en los enlaces del mapa del sitio */
+  #site_map a:hover {
+    color: #ffffff; /* Cambia el color a blanco cuando se pasa el mouse */
+  }
+  
+  /* Estilos para el contenedor de derechos reservados */
+  #rights_reserved {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background-color: #212529; /* Gris muy oscuro para el fondo de esta sección */
+    padding: 10px; /* Espaciado interno de 10px */
+  }
+  
+  /* Estilos para el texto dentro de los derechos reservados */
+  #rights_reserved p {
+    font-size: 0.75em; /* Tamaño pequeño de fuente */
+    color: #c3c3c3; /* Gris suave */
+  }
+
+/* Contenedor de tarjetas */
+#cards-container {
+    display: grid; /* Utiliza un sistema de cuadrícula para organizar las tarjetas */
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño para las tarjetas */
+    gap: 20px; /* Añade un espacio de 20px entre cada tarjeta */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenedor */
+}
+
+/* Estilos de la tarjeta */
+.card {
+    border-radius: 8px; /* Aplica bordes redondeados a las tarjetas */
+    overflow: hidden; /* Asegura que el contenido que sobresalga de los bordes redondeados no sea visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para dar profundidad a las tarjetas */
+    background-color: #fff; /* Establece un fondo blanco para las tarjetas */
+    transition: transform 0.3s; /* Aplica una transición suave cuando la tarjeta se transforma */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Amplía ligeramente la tarjeta cuando el usuario pasa el ratón sobre ella */
+}
+
+
+/* Imagen de la tarjeta */
+.card-image img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 15px; /* Añade un relleno de 15px alrededor del contenido de la tarjeta */
+}
+
+.card-content h2 {
+    font-size: 1.2rem; /* Establece un tamaño de fuente de 1.2rem para los títulos */
+    color: #333; /* Aplica un color gris oscuro para el texto */
+    margin: 10px 0; /* Añade un margen de 10px arriba y abajo del título */
+}
+
+.card-date {
+    font-size: 0.9rem; /* Establece un tamaño de fuente más pequeño para la fecha */
+    color: #888; /* Aplica un color gris claro para la fecha */
+}
+
+.card-link {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    margin-top: 10px; /* Añade un margen de 10px arriba del enlace */
+    font-size: 1rem; /* Establece el tamaño de fuente del enlace */
+    color: #007bff; /* Establece un color azul para el enlace */
+    text-decoration: none; /* Elimina la decoración por defecto del enlace */
+    font-weight: bold; /* Aplica negrita al enlace */
+}
+
+.card-link:hover {
+    text-decoration: underline; /* Añade un subrayado al enlace cuando el ratón pasa sobre él */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 900px) {
+    #cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    #cards-container {
+        grid-template-columns: 1fr; /* Una tarjeta por fila en pantallas pequeñas */
+    }
+}
+
+/* Estilo para el enlace activo en la barra de navegación */
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Resalta el texto cuando está activo */
+    color: #025192 !important; /* Cambia el color (o mantenlo consistente) */
+    text-decoration: underline; /* Subraya el texto cuando está activo (opcional) */
+}

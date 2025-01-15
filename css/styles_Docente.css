@@ -1,0 +1,289 @@
+/* General Styles */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina los paddings predeterminados de todos los elementos */
+}
+
+/* Variables para colores */
+:root {
+    --main-blue: rgb(2, 65, 146); /* Azul principal utilizado en la paleta de colores */
+    --light-gray: #f4f4f4; /* Gris claro para el fondo general */
+    --dark-gray: #2b2b2b; /* Gris oscuro para texto o fondos destacados */
+    --medium-gray: #3b3b3b; /* Gris intermedio para algunos detalles */
+    --text-gray: #333; /* Gris oscuro para el texto principal */
+    --highlight-gray: #555; /* Gris intermedio más oscuro para resaltar textos */
+    --link-color: #1e90ff; /* Color azul para los enlaces */
+    --footer-green: #8fc4b7; /* Verde para el pie de página */
+    --footer-highlight: #89c4a1; /* Verde más claro para resaltar elementos en el pie de página */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Tipo de fuente serif para el cuerpo del texto */
+    background-color: var(--light-gray); /* Establece el color de fondo con la variable light-gray */
+    color: var(--text-gray); /* Establece el color del texto utilizando la variable text-gray */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+img {
+    max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+    height: auto; /* La altura de las imágenes será proporcional a su ancho */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta al contenedor */
+}
+
+
+/* Navbar Styles */
+.navbar-brand {
+    display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor de la marca */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Añade un margen a la derecha de la imagen de la marca para separarla del texto */
+}
+
+.text-blue {
+    color: #1D5B8A; /* Color azul más suave para el texto */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Familia de fuentes sans-serif para un estilo limpio */
+    font-size: larger; /* Establece un tamaño de fuente más grande que el predeterminado */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Resalta el enlace activo con negrita */
+    color: #2B6D97 !important; /* Cambia el color del enlace activo a un azul ligeramente más oscuro */
+    text-decoration: underline; /* Subraya el enlace activo */
+}
+
+.nav-link:hover {
+    background-color: #f3f4f6; /* Cambia el color de fondo al pasar el ratón sobre el enlace */
+    color: #2563eb !important; /* Cambia el color del texto al pasar el ratón a un azul más vibrante */
+}
+
+
+/* Contenedor principal */
+.container {
+    display: flex; /* Usa el modelo de diseño flexbox para organizar los elementos dentro del contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas cuando no hay suficiente espacio en una sola fila */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor a 1200px, evitando que se estire demasiado en pantallas grandes */
+    margin: 50px auto; /* Añade un margen de 50px en la parte superior e inferior y centra el contenedor horizontalmente */
+    padding: 20px; /* Añade un relleno de 20px dentro del contenedor para separar el contenido de los bordes */
+    background-color: white; /* Establece un color de fondo blanco para el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor del contenedor para dar un efecto elevado */
+    gap: 20px; /* Establece un espacio de 20px entre los elementos dentro del contenedor */
+}
+
+/* Estilo para la columna izquierda */
+.left-column {
+    flex: 1 1 30%; /* Establece que la columna izquierda ocupe el 30% del espacio disponible, y pueda crecer o reducirse según sea necesario */
+    padding-right: 20px; /* Añade un relleno de 20px en el lado derecho de la columna para separar los elementos */
+}
+
+.left-column img {
+    width: 100%; /* La imagen ocupará el 100% del ancho disponible en la columna */
+    border-radius: 10px; /* Aplica un borde redondeado de 10px a la imagen */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Aplica una sombra sutil alrededor de la imagen para darle un efecto de profundidad */
+}
+
+/* Estilo para la columna derecha */
+.right-column {
+    flex: 1 1 65%; /* Establece que la columna derecha ocupe el 65% del espacio disponible, y pueda crecer o reducirse según sea necesario */
+}
+
+
+h1 {
+    font-size: 2.5em; /* Establece el tamaño de la fuente para el encabezado h1 a 2.5 veces el tamaño del texto base */
+    margin-bottom: 10px; /* Añade un margen de 10px debajo del h1 para separar el título de otros elementos */
+}
+
+h2 {
+    font-size: 1.5em; /* Establece el tamaño de la fuente para el encabezado h2 a 1.5 veces el tamaño del texto base */
+    color: var(--highlight-gray); /* Aplica el color definido como --highlight-gray para el texto del encabezado */
+    margin-bottom: 20px; /* Añade un margen de 20px debajo del h2 para separar el título de otros elementos */
+}
+
+h3 {
+    font-size: 1.2em; /* Establece el tamaño de la fuente para el encabezado h3 a 1.2 veces el tamaño del texto base */
+    margin-top: 20px; /* Añade un margen de 20px en la parte superior del h3 para separarlo de otros elementos */
+}
+
+ul {
+    list-style-type: disc; /* Define que los elementos de la lista no ordenada serán precedidos por un círculo (disco) */
+    padding-left: 20px; /* Añade un relleno de 20px a la izquierda para alinear los elementos de la lista con el texto */
+    margin-top: 10px; /* Añade un margen de 10px en la parte superior de la lista para separarla de los elementos previos */
+}
+
+p, li {
+    margin-bottom: 10px; /* Añade un margen de 10px en la parte inferior de los párrafos y los elementos de lista */
+}
+
+a {
+    color: var(--link-color); /* Establece el color del enlace con la variable --link-color */
+    text-decoration: none; /* Elimina el subrayado de los enlaces por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Cuando el usuario pasa el ratón sobre un enlace, se subraya */
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    display: flex; /* Usa flexbox para organizar los elementos dentro de .navbar-brand en una fila */
+    align-items: center; /* Alinea verticalmente los elementos en el centro de .navbar-brand */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Añade un margen a la derecha de la imagen dentro de .navbar-brand para separarla del texto */
+}
+
+.text-blue {
+    color: var(--main-blue); /* Aplica el color azul definido en la variable --main-blue */
+}
+
+
+ /* Header Styles */
+  /* Estilo para el encabezado principal del sitio */
+  #header {
+    background-color: #ffffff; /* Fondo blanco limpio que aporta claridad al encabezado */
+  }
+
+
+/* Social Media Section Styles */
+/* Estilos para la sección de redes sociales */
+#social_media {
+    background-color: #6c757d; /* Gris oscuro para crear contraste con el resto del sitio */
+    text-align: center; /* Centra el contenido de la sección */
+    padding: 20px 0; /* Espacio vertical en la parte superior e inferior de la sección */
+  }
+  
+  /* Estilos para los enlaces dentro de la sección de redes sociales */
+  #social_media a {
+    display: inline-block; /* Los enlaces se muestran en línea pero pueden tener dimensiones de bloque */
+    margin: 0 10px; /* Margen horizontal de 10px entre cada enlace */
+    transition: transform 0.3s ease; /* Agrega una transición suave al transformar los enlaces */
+  }
+  
+  /* Estilos para las imágenes dentro de la sección de redes sociales */
+  #social_media img {
+    width: 40px; /* Tamaño de las imágenes de los íconos de redes sociales */
+    height: 40px; /* Mantiene las imágenes cuadradas */
+    border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados, creando círculos */
+  }
+  
+  /* Efecto de hover en los enlaces de redes sociales */
+  #social_media a:hover {
+    transform: scale(
+      1.1
+    ); /* Aumenta el tamaño de los íconos al pasar el mouse por encima */
+  }
+  
+  /* Footer Styles */
+  /* Estilos para el pie de página */
+  #footer {
+    background-color: #343a40; /* Gris oscuro para el fondo del pie de página */
+    padding: 20px; /* Espacio interno de 20px en todo el pie de página */
+  }
+  
+  /* Estilos para el contenedor principal dentro del pie de página */
+  #contenido {
+    display: flex; /* Utiliza el modelo de diseño flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+    justify-content: space-between; /* Distribuye el espacio de manera uniforme entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+    background-color: #495057; /* Gris más oscuro para diferenciar del pie de página */
+    padding: 40px; /* Espaciado de 40px alrededor del contenido */
+    gap: 20px; /* Espacio de 20px entre los elementos */
+  }
+  
+  /* Estilos para las secciones dentro del pie de página (mapa del sitio, contacto, ubicación) */
+  #site_map,
+  #contacto,
+  #ubicacion {
+    flex: 1; /* Cada sección toma un espacio igual dentro del contenedor */
+  }
+  
+  /* Estilos para los títulos de las secciones dentro del pie de página */
+  #site_map h3,
+  #contacto h3,
+  #ubicacion h3 {
+    font-size: 1.2em; /* Tamaño de fuente para los encabezados */
+    color: #dbe1e4; /* Gris claro para los títulos */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+  }
+  
+  /* Estilos para los párrafos dentro de las secciones del pie de página */
+  #site_map p,
+  #contacto p,
+  #ubicacion p {
+    font-size: 0.75em; /* Tamaño pequeño de fuente para los párrafos */
+    color: #dbe1e4; /* Gris claro */
+    margin-bottom: 5px 0; /* Espacio entre párrafos */
+  }
+  
+  /* Estilos para los enlaces dentro del mapa del sitio */
+  #site_map a {
+    display: block; /* Hace que cada enlace se muestre como un bloque para ocupar toda la línea */
+    font-size: 0.75em; /* Tamaño pequeño de fuente para los enlaces */
+    color: #c3c3c3; /* Gris suave */
+    margin: 5px 0; /* Espacio entre los enlaces */
+    transition: color 0.3s ease; /* Transición suave de color cuando se pasa el mouse */
+  }
+  
+  /* Efecto de hover en los enlaces del mapa del sitio */
+  #site_map a:hover {
+    color: #ffffff; /* Cambia el color a blanco cuando se pasa el mouse */
+  }
+  
+  /* Estilos para el contenedor de derechos reservados */
+  #rights_reserved {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background-color: #212529; /* Gris muy oscuro para el fondo de esta sección */
+    padding: 10px; /* Espaciado interno de 10px */
+  }
+  
+  /* Estilos para el texto dentro de los derechos reservados */
+  #rights_reserved p {
+    font-size: 0.75em; /* Tamaño pequeño de fuente */
+    color: #c3c3c3; /* Gris suave */
+  }
+
+/* Responsividad */
+
+/* Estilos para pantallas con un ancho máximo de 1024px (tabletas y pantallas medianas) */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del layout a columna, apilando los elementos verticalmente */
+    }
+    
+    #contenido {
+        flex-direction: column; /* Cambia la dirección del contenido a columna */
+        align-items: center; /* Centra los elementos dentro de #contenido */
+    }
+}
+
+/* Estilos para pantallas con un ancho máximo de 768px (tabletas en modo retrato y dispositivos móviles grandes) */
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        width: 100%; /* Las columnas ocupan el 100% del ancho, apilándose una sobre la otra */
+        padding: 0; /* Elimina el padding de las columnas para una mejor distribución */
+    }
+    
+    .left-column {
+        margin-bottom: 20px; /* Añade un margen inferior a la columna izquierda para separar las columnas en la vista apilada */
+    }
+}
+
+/* Estilos para pantallas con un ancho máximo de 576px (dispositivos móviles pequeños) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em; /* Reduce el tamaño de la fuente del encabezado h1 */
+    }
+    
+    h2 {
+        font-size: 1.2em; /* Reduce el tamaño de la fuente del encabezado h2 */
+    }
+    
+    h3 {
+        font-size: 1em; /* Ajusta el tamaño de la fuente de h3 para que se ajuste mejor a pantallas pequeñas */
+    }
+}

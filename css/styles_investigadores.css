@@ -1,0 +1,286 @@
+/* General Styles */
+/* Aplica box-sizing para incluir padding y border dentro del tamaño total de los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina padding predeterminado de todos los elementos */
+}
+
+/* Estilo base para el cuerpo del documento */
+/* Define una fuente general, altura de línea para la legibilidad y un color de fondo neutro */
+body {
+  font-family: Arial, sans-serif; /* Establece una fuente sencilla y universal */
+  line-height: 1.6; /* Mejora la legibilidad al aumentar la separación entre líneas */
+  background-color: #dadbdb; /* Asigna un fondo gris claro para todo el sitio */
+}
+
+/* Estilo global para imágenes */
+/* Asegura que las imágenes sean responsivas y mantengan su proporción */
+img {
+  max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+  height: auto; /* Mantiene las proporciones originales de las imágenes */
+  object-fit: cover; /* Garantiza que la imagen cubra completamente su contenedor */
+}
+/* Navbar Styles */
+/* Estilo para la marca de la barra de navegación (nombre/logo del sitio) */
+.navbar-brand {
+  display: flex; /* Utiliza flexbox para alinear los elementos internos de forma horizontal */
+  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo para la imagen de la marca dentro de la barra de navegación */
+.navbar-brand img {
+  margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+}
+
+/* Estilo para texto con la clase 'text-blue' */
+/* Generalmente usado en el título o elementos destacados de la navbar */
+.text-blue {
+  color: #1d5b8a; /* Aplica un color azul suave al texto */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Fuente elegante y bien legible */
+  font-size: larger; /* Incrementa ligeramente el tamaño del texto */
+}
+
+/* Estilo para enlaces activos dentro de la barra de navegación */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Destaca el enlace activo con texto en negrita */
+  color: #2b6d97 !important; /* Aplica un azul más oscuro para resaltar el enlace activo */
+  text-decoration: underline; /* Subraya el enlace activo para mayor énfasis */
+}
+
+/* Efecto hover en los enlaces de la barra de navegación */
+.nav-link:hover {
+  background-color: #f3f4f6; /* Cambia el fondo a un gris claro al pasar el cursor */
+  color: #2563eb !important; /* Aplica un azul más brillante para destacar el enlace */
+}
+/* Header Styles */
+/* Estilo para el encabezado principal del sitio */
+#header {
+  background-color: #ffffff; /* Fondo blanco limpio que aporta claridad al encabezado */
+}
+
+/* Investigadores Section */
+#investigadores img {
+  width: 100%; /* Establece que las imágenes ocuparán el 100% del ancho disponible */
+  height: 400px; /* Fija la altura de las imágenes a 400px */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio asignado sin distorsionarse, recortando si es necesario */
+  border: none; /* Elimina cualquier borde alrededor de la imagen */
+}
+
+/* Social Media Section Styles */
+/* Estilos para la sección de redes sociales */
+#social_media {
+  background-color: #6c757d; /* Gris oscuro para crear contraste con el resto del sitio */
+  text-align: center; /* Centra el contenido de la sección */
+  padding: 20px 0; /* Espacio vertical en la parte superior e inferior de la sección */
+}
+
+/* Estilos para los enlaces dentro de la sección de redes sociales */
+#social_media a {
+  display: inline-block; /* Los enlaces se muestran en línea pero pueden tener dimensiones de bloque */
+  margin: 0 10px; /* Margen horizontal de 10px entre cada enlace */
+  transition: transform 0.3s ease; /* Agrega una transición suave al transformar los enlaces */
+}
+
+/* Estilos para las imágenes dentro de la sección de redes sociales */
+#social_media img {
+  width: 40px; /* Tamaño de las imágenes de los íconos de redes sociales */
+  height: 40px; /* Mantiene las imágenes cuadradas */
+  border-radius: 50%; /* Hace que las imágenes tengan bordes redondeados, creando círculos */
+}
+
+/* Efecto de hover en los enlaces de redes sociales */
+#social_media a:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de los íconos al pasar el mouse por encima */
+}
+
+/* Footer Styles */
+/* Estilos para el pie de página */
+#footer {
+  background-color: #343a40; /* Gris oscuro para el fondo del pie de página */
+  padding: 20px; /* Espacio interno de 20px en todo el pie de página */
+}
+
+/* Estilos para el contenedor principal dentro del pie de página */
+#contenido {
+  display: flex; /* Utiliza el modelo de diseño flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas si es necesario */
+  justify-content: space-between; /* Distribuye el espacio de manera uniforme entre los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+  background-color: #495057; /* Gris más oscuro para diferenciar del pie de página */
+  padding: 40px; /* Espaciado de 40px alrededor del contenido */
+  gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+/* Estilos para las secciones dentro del pie de página (mapa del sitio, contacto, ubicación) */
+#site_map,
+#contacto,
+#ubicacion {
+  flex: 1; /* Cada sección toma un espacio igual dentro del contenedor */
+}
+
+/* Estilos para los títulos de las secciones dentro del pie de página */
+#site_map h3,
+#contacto h3,
+#ubicacion h3 {
+  font-size: 1.2em; /* Tamaño de fuente para los encabezados */
+  color: #dbe1e4; /* Gris claro para los títulos */
+  margin-bottom: 10px; /* Espacio debajo de los títulos */
+}
+
+/* Estilos para los párrafos dentro de las secciones del pie de página */
+#site_map p,
+#contacto p,
+#ubicacion p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los párrafos */
+  color: #dbe1e4; /* Gris claro */
+  margin-bottom: 5px 0; /* Espacio entre párrafos */
+}
+
+/* Estilos para los enlaces dentro del mapa del sitio */
+#site_map a {
+  display: block; /* Hace que cada enlace se muestre como un bloque para ocupar toda la línea */
+  font-size: 0.75em; /* Tamaño pequeño de fuente para los enlaces */
+  color: #c3c3c3; /* Gris suave */
+  margin: 5px 0; /* Espacio entre los enlaces */
+  transition: color 0.3s ease; /* Transición suave de color cuando se pasa el mouse */
+}
+
+/* Efecto de hover en los enlaces del mapa del sitio */
+#site_map a:hover {
+  color: #ffffff; /* Cambia el color a blanco cuando se pasa el mouse */
+}
+
+/* Estilos para el contenedor de derechos reservados */
+#rights_reserved {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: #212529; /* Gris muy oscuro para el fondo de esta sección */
+  padding: 10px; /* Espaciado interno de 10px */
+}
+
+/* Estilos para el texto dentro de los derechos reservados */
+#rights_reserved p {
+  font-size: 0.75em; /* Tamaño pequeño de fuente */
+  color: #c3c3c3; /* Gris suave */
+}
+
+/* Cards Container Styles */
+#cards-container {
+  display: flex; /* Utiliza el modelo de caja flexible para distribuir los elementos dentro del contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas filas si no hay suficiente espacio en una sola fila */
+  justify-content: space-between; /* Distribuye los elementos con el máximo espacio posible entre ellos */
+  gap: 20px; /* Establece un espacio de 20px entre cada tarjeta */
+  padding: 20px; /* Añade un espacio de 20px alrededor del contenedor */
+}
+
+/* Card Styles */
+.card {
+  background-color: white; /* Establece el fondo blanco para la tarjeta */
+  border: 1px solid #ccc; /* Añade un borde gris claro */
+  border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  overflow: hidden; /* Evita que el contenido se desborde fuera de la tarjeta */
+  position: relative; /* Permite el posicionamiento de elementos dentro de la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para los efectos de hover */
+  width: calc(
+    33.33% - 20px
+  ); /* Establece el tamaño de la tarjeta a un tercio del ancho del contenedor, con un margen de 20px */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(
+    -5px
+  ); /* Desplaza la tarjeta hacia arriba cuando se pasa el ratón sobre ella */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar un efecto de elevación */
+}
+
+/* Image inside card */
+.card-left {
+  flex: 1; /* La imagen ocupa 1 parte del espacio disponible */
+}
+
+.card-left img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* La imagen ocupa todo el alto del contenedor */
+}
+
+/* Text inside card */
+.card-right {
+  flex: 2; /* El texto ocupa 2 partes del espacio disponible */
+  padding: 15px; /* Añade un espacio alrededor del texto dentro de la tarjeta */
+}
+
+.card-right h2 {
+  margin: 0; /* Elimina el margen predeterminado para el título */
+  font-size: 1.5em; /* Define un tamaño de fuente más grande para el título */
+}
+
+.card-right p {
+  margin: 5px 0; /* Añade un pequeño margen entre los párrafos */
+  font-size: 0.9em; /* Establece un tamaño de fuente más pequeño para los párrafos */
+}
+
+/* Extra Content on Hover */
+.content {
+  display: none; /* Oculta el contenido por defecto */
+  position: absolute; /* Posiciona el contenido de forma absoluta dentro de la tarjeta */
+  top: 0; /* Coloca el contenido en la parte superior de la tarjeta */
+  left: 0; /* Coloca el contenido en el borde izquierdo de la tarjeta */
+  right: 0; /* Coloca el contenido en el borde derecho de la tarjeta */
+  bottom: 0; /* Coloca el contenido en la parte inferior de la tarjeta */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Fondo blanco semi-transparente para el contenido */
+  padding: 20px; /* Añade un espacio alrededor del contenido */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del contenedor */
+  z-index: 1; /* Asegura que el contenido aparezca encima del resto de la tarjeta */
+  align-items: center; /* Centra el contenido de manera vertical */
+  justify-content: center; /* Centra el contenido de manera horizontal */
+  color: black; /* Establece el color del texto en negro */
+}
+
+/* Mostrar el contenido al hacer hover en la tarjeta */
+.card:hover .content {
+  display: flex; /* Muestra el contenido como un contenedor flexible al hacer hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #contenido {
+    flex-direction: column; /* Cambia la dirección del contenedor a columna para pantallas más pequeñas */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+  }
+
+  #cards-container {
+    justify-content: center; /* Centra las tarjetas dentro del contenedor */
+  }
+
+  .card {
+    width: calc(
+      45% - 20px
+    ); /* Ajusta el ancho de las tarjetas para que ocupen el 45% del ancho disponible */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(
+      100% - 40px
+    ); /* Las tarjetas ocupan el 100% del ancho disponible menos los márgenes */
+    margin-bottom: 20px; /* Añade un margen inferior entre las tarjetas */
+  }
+}
+
+/* Estilo para los enlaces activos en la barra de navegación */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Hace que el texto se vea más grueso cuando está activo */
+  color: #025192 !important; /* Cambia el color a un tono específico de azul cuando el enlace está activo */
+  text-decoration: underline; /* Agrega un subrayado opcional para resaltar el enlace activo */
+}
